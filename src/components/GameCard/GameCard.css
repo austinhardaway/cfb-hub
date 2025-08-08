@@ -1,0 +1,25 @@
+.game-card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.game-card-logo {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 10px;
+}
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
