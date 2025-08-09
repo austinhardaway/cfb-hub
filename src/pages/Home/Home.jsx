@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';  
 import useHomeData from './useHomeData';
 import GameCard from '../../components/GameCard/GameCard';
+import GameSlate from '../../components/GameSlate/GameSlate';
 
 
 const Home = () => {
@@ -10,15 +11,9 @@ const Home = () => {
 
     return (
         <div className="home">
-           {/* {!loading && games.length > 0 && 
-                <GameCard game={games[0]} />
-           } */}
-           <div className="upcoming-games">
-           {games.length>0 && games.map((game, index) => (
-                <GameCard key={index} game={game} />
-           ))}
-           </div>
-           
+           {!loading && games.length > 0 && 
+                <GameSlate title={'Week 1'} games={games} />
+           }
         </div>
     );
 }
