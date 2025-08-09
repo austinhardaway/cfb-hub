@@ -13,9 +13,12 @@ const Home = () => {
            {/* {!loading && games.length > 0 && 
                 <GameCard game={games[0]} />
            } */}
+           <div className="upcoming-games">
            {games.length>0 && games.map((game, index) => (
                 <GameCard key={index} game={game} />
            ))}
+           </div>
+           
         </div>
     );
 }
